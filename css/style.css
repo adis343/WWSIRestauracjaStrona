@@ -1,0 +1,317 @@
+body{
+    background-image: linear-gradient(to right, green,white,red);
+    color:white;
+}
+
+body a {
+    text-decoration: none;
+    color: white;
+}
+.container{
+    background-color: black;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    margin-top: 15px;
+    width: auto;
+    min-width: 600px;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: black 1px 10px 30px;
+}
+
+#logo {
+    float: left;
+    width: 35%;
+    text-align: center;
+}
+
+#haslo {
+    float: left;
+    width: 65%;
+}
+
+
+.haslo-motto {
+    font-size: 30px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    margin-left: 80px;
+}
+.haslo-title {
+    font-size: 50px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(green, white ,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+
+}
+
+main{
+    border-top: 1px solid white;
+    padding-top: 25px;
+    clear: both;
+}
+
+.content-title {
+    font-size: 25px;
+    text-shadow: white 1px 1px 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.content-article {
+    font-size: 18px;
+    padding: 20px;
+    text-indent: 10px;
+}
+
+
+.content-article::first-letter {
+    font-size: 30px;
+}
+
+#category-content{
+    padding: 20px;
+}
+
+.category {
+    display: inline-block;
+    width: 33%;
+    height: 400px;
+    text-align: center;
+}
+
+
+.category:hover{
+    box-shadow: red 0 0 15px 10px;
+    transition-duration: 0.2s;
+    z-index: 999;
+}
+.category:hover .title-category{
+    font-size: 50px;
+    transition-duration: 0.5s;
+    z-index: 999;
+}
+#przystawki {
+    background-image: url('../img/przystawka.jpg');
+    background-size: cover;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+#dania-glowne {
+    background-image: url('../img/glowne.jpg');
+    background-size: cover;
+}
+
+#drinki {
+    background-image: url('../img/drinki.jpg');
+    background-size: cover;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.title-category{
+    line-height: 400px;
+    font-size: 35px;
+    text-shadow: -5px -5px 5px green, 5px 5px 5px red;
+}
+
+footer {
+    margin-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid white;
+}
+
+.column-footer-left {
+    display: inline-block;
+    width: 59%;
+    height: auto;
+}
+
+.column-footer-right {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+    vertical-align: top;
+}
+
+.mapa-footer{
+    float: left;
+}
+.kontakt-footer{
+    float: right;
+}
+
+.menu-footer{
+    float: right;
+    list-style-type: none;
+
+}
+
+.menu-footer li {
+    float: right;
+    width: 250px;
+    padding: 10px;
+    background-color: indianred;
+    border: 1px solid darkred;
+
+}
+li:first-child {
+    border-top-left-radius: 10px;
+}
+li:last-child {
+    border-bottom-left-radius: 10px;
+}
+
+.menu-footer li:hover{
+    width: 270px;
+    background-image: linear-gradient(to right, green,red);
+    transition-duration: 0.2s;
+}
+
+.product-row {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.product-container {
+    position: relative;
+    padding: 20px;
+    margin: 2px;
+    width:28%;
+    float: left;
+    height: 400px;
+    background-color: rgba(255, 44, 44, 0.2);
+    border-radius: 20px;
+}
+
+
+.img-product {
+    border-radius: 50%;
+
+}
+
+.img-product img {
+    border: 4px solid #f79646;
+    width:  100%;
+    height: auto;
+    border-radius: 50%;
+}
+.description-product{
+    border: 3px solid white;
+    width:90%;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.button-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50%;
+    vertical-align: middle;
+    border: 3px solid #d16908;
+    background-color: #f79646;
+}
+
+.button-order:hover {
+    background-color: indianred;
+    transition-duration: 0.2s;
+    border-style: inset;
+}
+
+.input-text {
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.contact-form{
+    position: relative;
+    padding-bottom: 70px;
+    text-align: center;
+    padding-top: 10px;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px cornflowerblue;
+}
+.textarea {
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.input-text:active,  .input-text:focus, .textarea:active,  .textarea:focus {
+    box-shadow: 0 0 3px 2px greenyellow;
+}
+.table-kontakt {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-container {
+    display: table;
+    width: 100%;
+}
+
+.cart-table {
+    padding: 20px;
+    display: table-cell;
+}
+
+#table-product-cart{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+#table-product-cart thead{
+    background-color: darkred;
+}
+
+.message {
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+    background-color: #ffa748;
+    border-radius: 20px;
+}
+
+.btnZlozZamowienie{
+    border: 3px solid #d16908;
+    background-color: #f79646;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+.cart-form{
+    width: 100%;
+}
+
+.input-search {
+    width: 50%;
+    height: 35px;
+    background-color: #3a3a3d;
+    color: white;
+    border-radius: 5px;
+    padding-left: 20px;
+}
